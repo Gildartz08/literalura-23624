@@ -1,16 +1,23 @@
 package com.aluracursos.literalura_application.model;
 
+import jakarta.persistence.*;
+import org.graalvm.polyglot.Language;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Entity
+@Table(name = "libros")
 public class Libro {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
+    @ManyToOne
     private Autor autor;
     private String idioma;
     private Double totalDescargas;
-    private List<Autor> autores = new ArrayList<>();
 
     public Libro() {
     }
@@ -20,9 +27,6 @@ public class Libro {
         this.autor = autor;
         this.idioma = libroDto.idiomas().get(0);
         this.totalDescargas = libroDto.totalDescargas();
-    }
-
-    public Libro(LibrosDto librosDto) {
     }
 
     public Long getId() {
