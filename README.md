@@ -1,10 +1,10 @@
 ![logo LiterAlura](https://github.com/Gildartz08/literalura-23624/assets/150280699/44163460-e0f0-44b1-8a0c-434bb295f21f)
 
 
-<h1 align="center"> Conversor de Monedas </h1>
+<h1 align="center"> LiterAlura - Biblioteca </h1>
 
 ## Descripción
-Este proyecto es un challenge de Oracle ONE y Alura Latam como parte de la formación como Back End Developer de JAVA. 
+Este proyecto es un challenge de Oracle Next Education ONE y Alura Latam como parte de la formación como Back End Developer de JAVA. 
 La aplicación que funciona a nivel de consola, permite realizar distintas tareas usando la API Gutendex y el RDBMS PostgreSQL.
 
 ## Funcionamiento
